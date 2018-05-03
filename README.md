@@ -1,10 +1,13 @@
+My S3 URL: http://learnjs.lee.s3-website-us-east-1.amazonaws.com
+
+All code and tests: https://pragprog.com/book/brapps
 
 ## Change Log
 
 ### Beta 3 Changes
 
   * Compensating for AWSCLI timing issues when creating roles
-  
+
 ### Beta 2 Changes
 
   * Now using 'admin' profile instead of default profile
