@@ -135,6 +135,7 @@ function create_cognito_auth_role() {
   local identity_pool_dir=$1
   local pool_id=$(support/jsed.py ${identity_pool_dir}/pool_info.json 'IdentityPoolId')
   local pool_name=$(support/jsed.py ${identity_pool_dir}/pool_info.json 'IdentityPoolName')
+  # manual type out learnjs ... they're might be a bug in jsed.py
   local pool_name="learnjs"
   generate_assume_role_policy ${pool_id} > ${identity_pool_dir}/assume_role_policy.json
   if [[ ! -s ${identity_pool_dir}/role_info.json ]]; then
